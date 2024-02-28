@@ -1,0 +1,15 @@
+<div class="category_navbar">
+  <li *ngFor="let category of categoriesData" class="navbar-item">
+    <button
+      (click)="clickHandler(category.id)"
+      class="navbar-link"
+      href="#"
+      [ngClass]="{
+        active:
+          category.id === (categoriesManagmentService.activeCategoryId | async)
+      }"
+    >
+      {{ category.name }}
+    </button>
+  </li>
+</div>

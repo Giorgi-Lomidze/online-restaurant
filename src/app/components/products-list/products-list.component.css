@@ -1,0 +1,128 @@
+.card {
+  width: 250px;
+  height: 370px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+img {
+  width: 220px;
+  height: 160px;
+  border: 1px solid black;
+}
+
+.card-body {
+  width: 230px;
+  height: 200px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-title {
+  height: 20px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.spiciness-block {
+  display: flex;
+  justify-content: center;
+}
+
+.description-block {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-price {
+  height: 30px;
+  width: 50px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  height: 30px;
+  width: 120px;
+  background-color: whitesmoke;
+  cursor: pointer;
+  border: 6px solid black;
+}
+.btn:hover {
+  scale: 1.1;
+}
+.btn:active {
+  scale: 0.9;
+}
+
+ul {
+  min-height: 400px;
+  min-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: absolute;
+  left: 420px;
+  top: 590px;
+}
+
+.block-container {
+  width: 230px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.formblock {
+  margin-top: 10px;
+  width: 200px;
+  height: 300px;
+  background-color: rgb(219, 211, 211);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.range-block {
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.vegetarian-block {
+  width: 120px;
+}
+.nuts-block {
+  width: 120px;
+}
+
+.apply-btn {
+  margin-top: 20px;
+  width: 160px;
+  height: 40px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+}
+.apply-btn:hover {
+  scale: 1.1;
+}
+.apply-btn:active {
+  scale: 0.9;
+}

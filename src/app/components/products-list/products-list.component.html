@@ -1,0 +1,71 @@
+<form class="formblock" (ngSubmit)="filterformHandler(f)" #f="ngForm">
+  <div class="vegetarian-block">
+    <p>Filter</p>
+    <input
+      ngModel
+      type="radio"
+      id="vegetarian"
+      name="vegetarian"
+      [value]="true"
+    />
+    <label for="vegetarian">Vegetarian</label>
+    <br />
+    <input
+      ngModel
+      type="radio"
+      id="vegetarian1"
+      name="vegetarian"
+      [value]="false"
+    />
+    <label for="vegetarian1">No vegetarian</label>
+    <br />
+  </div>
+
+  <div class="nuts-block">
+    <input ngModel type="radio" id="nuts" name="nuts" [value]="true" />
+    <label for="nuts">Nuts</label>
+    <br />
+    <input ngModel type="radio" id="nuts1" name="nuts" [value]="false" />
+    <label for="nuts1">No nuts</label>
+    <br />
+  </div>
+
+  <div class="range-block">
+    <label for="spiciness">spiciness</label>
+    <input
+      class="range"
+      ngModel
+      min="0"
+      max="4"
+      type="range"
+      name="spiciness"
+      id=""
+    />
+  </div>
+  <button class="apply-btn" type="submit">apply filters</button>
+</form>
+
+<div class="container">
+  <ul *ngIf="productsList.length > 0">
+    <div *ngFor="let product of productsList" class="card">
+      <img [src]="product.image" alt="" />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="spiciness-block">spiciness: {{ product.spiciness }}</p>
+        <div class="description-block">
+          <p>{{ product.nuts }}</p>
+        </div>
+        <div class="block-container">
+          <p class="card-price">$ {{ product.price }}</p>
+          <button
+            (click)="addToCart(product.id, product.price)"
+            class="btn"
+            href=""
+          >
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </ul>
+</div>

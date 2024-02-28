@@ -1,0 +1,30 @@
+.category_navbar {
+  height: 60px;
+  background-color: rgb(219, 211, 211);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+
+.navbar-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar-item:hover {
+  background-color: red;
+}
+.navbar-link {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.navbar-link:active {
+  scale: 0.9;
+}
+.active,
+.btn:hover {
+  color: red;
+}

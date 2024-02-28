@@ -1,0 +1,14 @@
+<div class="card-container">
+  <div *ngFor="let product of cartProductData" class="card">
+    <img [src]="product.product.image" alt="" />
+    <div class="card-body">
+      <h5 class="card-title">{{ product.product.name }}</h5>
+      <div class="block-container">
+        <p class="card-price">price: {{ product.product.price }}$</p>
+        <button (click)="deleteHandler(product.product.id)" class="delete-btn">
+          X
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
